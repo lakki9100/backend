@@ -1,14 +1,16 @@
 # Dockerfile
+
 FROM python:3.11-slim
 
+# Set working directory to /app
 WORKDIR /app
 
-# Install dependencies
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# Copy contents of ./app into /app
+COPY app/ .
 
-# Copy app
-COPY . .
+# Install dependencies
+COPY app/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose and run
 ENV PORT=8080
