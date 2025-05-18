@@ -13,8 +13,8 @@ jobs:
       PROJECT_ID: maps-api-project-460015
       REGION: us-central1
       SERVICE_NAME: map-backend
-      REPO: backend-docker-repo
-      IMAGE: us-central1-docker.pkg.dev/maps-api-project-460015/backend-docker-repo/map-backend
+      REPO: circlemaprepo
+      IMAGE: us-central1-docker.pkg.dev/maps-api-project-460015/circlemaprepo/map-backend
 
     steps:
       - name: Checkout code
