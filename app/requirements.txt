@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+google-cloud-secret-manager
+google-auth
+google-generativeai
+requests
