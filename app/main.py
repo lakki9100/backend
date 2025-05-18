@@ -13,6 +13,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 # Routers
 app.include_router(places.router)
 app.include_router(chat.router)
